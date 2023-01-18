@@ -13,7 +13,7 @@ int selected[V];
 int s = 0;
 char opt;
 int G[V][V] , begin ,end , cost;
-//initialise -1
+
 for (int i = 0;i<V;i++)
 {
 for (int j = 0;j<V;j++)
@@ -56,16 +56,16 @@ break;
 }
 
 }
-//Make all false
+
 for (int i = 0;i<V;i++)
 {
 selected[i] = false;
 }
 no_edge = 0;
 selected[0] = true;
-int x; // row number
-int y; // col number
-// print for edge and weight
+int x;
+int y; 
+
 printf("Edge : Weight\n");
 while (no_edge < V - 1)
 {
